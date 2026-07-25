@@ -102,8 +102,8 @@
   </head>
   <body>
     <main class="card">
-      <h1>Press to play</h1>
-      <p>Click the button to play the sound from sounds</p>
+      <h1>NY — Press to play</h1>
+      <p>Click the button to play the sound</p>
       <button id="playButton" type="button">reject</button>
       <button id="playButton2" type="button" style="margin-left: 10px;">accept</button>
       <div id="status" aria-live="polite"></div>
@@ -122,7 +122,7 @@
           await audio.play();
 
           audio.addEventListener('ended', () => {
-            status.textContent = `${label} finished.`;
+            status.textContent = `GG — sound finished.`;
           });
         } catch (error) {
           status.textContent = `Could not play ${label}.`;
