@@ -116,7 +116,7 @@
 
       async function playSound(source, label) {
         try {
-          status.textContent = `Playing ${label}...`;
+          status.textContent = `Playing sound...`;
           const audio = new Audio(source);
           audio.preload = 'auto';
           await audio.play();
